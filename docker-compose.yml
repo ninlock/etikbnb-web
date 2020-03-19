@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+
+  web:
+    image: node:13
+    environment:
+      NUXT_HOST: 0.0.0.0
+    volumes:
+      - ./:/var/etikbnb-web
+    ports:
+       - 3000:3000
+    working_dir: /var/etikbnb-web
+    command: "npm run dev"
