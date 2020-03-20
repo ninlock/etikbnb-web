@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .redbox {
+    background-color: #ff0000;
+    color: #000000;
+  }
+}

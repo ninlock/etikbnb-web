@@ -5,10 +5,11 @@
       <h1>
         Un logement pour personnel de santé
       </h1>
-      <span>
+      <span class="redbox">
         proposer aux personnels soignants  qui vivent loin de leur lieu de travail un hébergement de courte durée plus proche de ce lieu
         .
       </span>
+
       <div class="links">
         <button>Je propose un logement</button>
         <br>
@@ -45,18 +46,12 @@ export default Vue.extend({
 })
 </script>
 
-<style>
+<style lang="scss">
 .box{
   margin-bottom: 30px;
-}
-.container {
-  margin: 0 auto;
-  width: 80%;
-  min-height: 100vh;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  span {
+    background-color: #0B7FC7;
+  }
 }
 
 .title {
