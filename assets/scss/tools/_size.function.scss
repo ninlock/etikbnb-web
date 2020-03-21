@@ -1,0 +1,25 @@
+/// Function size
+/// Function that return font-size in $font-size
+///
+/// @param {string} $name - name of size
+/// @param {string} $key - name of key in $theme-sizes
+///
+/// @require {function} map-deep-get - map returns inside map
+/// @require {function} map-has-nested-keys - map returns all keys nested with each others
+/// @require {map} $theme-sizes - defines sizes in project
+///
+@function font-size($name, $key: null) {
+  @if map-has-keys($theme-sizes, $name) {
+    @each $value in $name {
+      $name: map-get($theme-sizes, $name);
+    }
+    @return $name;
+    } @else if map-has-nested-keys($theme-sizes, $key, $name) {
+    @each $value in $key {
+      $name: map-deep-get($theme-sizes, $key, $name);
+    }
+    @return $name;
+  } @else {
+    @error 'Value '#{$name}' with key' #{$key}' doesn\'t exist.';
+  }
+}

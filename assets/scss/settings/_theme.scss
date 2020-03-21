@@ -1,0 +1,90 @@
+/// Theme breakpoints
+///
+/// Defines breakpoints in project
+$theme-breakpoints: (
+  layout: (
+    'beyond-tiny': 320px,
+    'beyond-small': 480px,
+    'beyond-medium': 768px,
+    'beyond-large': 1024px,
+    'beyond-wide': 1440px
+  )
+);
+
+/// Theme layout
+///
+/// Defines layout variables
+$theme-layout: (
+  wrapper: rem(620),
+  margin-spacing: rem(20)
+);
+
+/// Theme fonts
+///
+/// Defines all fonts in project
+$theme-fonts: (
+  default: (
+    'name': 'Helvetica',
+    'fallback': 'Helvetica',
+    'type': 'sans-serif'
+  ),
+  primary: (
+    'name': 'Saira Black',
+    'fallback': 'Arial Black',
+    'type': 'sans-serif'
+  )
+);
+
+/// Theme colors
+///
+/// Defines all colors in project
+$theme-colors: (
+  general: (
+    'default': #111,
+  ),
+  basic: (
+    'black': #000,
+    'white': #fff
+  ),
+  background: (
+    'default': #fefefe,
+  ),
+  selection: (
+    'background': #000,
+    'color': #fff,
+  ),
+  state: (
+    'success': #28a745,
+    'error': #dc3545,
+  )
+);
+
+/// Theme sizes
+///
+/// Defines all sizes in project
+$theme-sizes: (
+  title-1: rem(37),
+  title-2: rem(28),
+  button: rem(18),
+  content: rem(16)
+);
+
+/// Theme buttons
+///
+/// Defines button's styles in project
+///
+/// Others states can be added
+$theme-buttons: (
+  default: (
+    static: (
+      'color': #1c2a43,
+      'background': #fff,
+      'border-color': #1c2a43,
+    ),
+    hover: (
+      'color': #fff,
+      'background': #1c2a43,
+      'border-color': #1c2a43
+    ),
+  )
+);

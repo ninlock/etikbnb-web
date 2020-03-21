@@ -1,16 +1,31 @@
-html, body {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+// Import partials
+// Based on ITCSS methodology
 
-h1, h2, h3, h4 {
-  margin: 16px 0px;
-}
+// Tools : mixins and functions
+@import 'tools/_maps.function';
+@import 'tools/_font-face.rule';
+@import 'tools/_font-name.function';
+@import 'tools/_rem.function';
+@import 'tools/_test-unit.function';
+@import 'tools/_strip-unit.function';
+@import 'tools/_breakpoints.mixin';
+@import 'tools/_color.function';
+@import 'tools/_size.function';
+
+// Settings : theme for colors, fonts, sizes
+@import 'settings/theme';
+
+// Generic
+@import 'generic/box-sizing';
+@import 'generic/normalize';
+
+// Element
+@import 'elements/setup';
+
+// Objects
+@import 'objects/wrapper';
+@import 'objects/buttons';
+@import 'objects/inputs';
 
 
 label {
@@ -70,19 +85,4 @@ input[type=submit]:hover {
 
 .mb-m {
   margin-bottom: 10px;
-}
-
-.container {
-  margin: 0 auto;
-  width: 60%;
-  min-height: 100vh;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-
-  .redbox {
-    background-color: #ff0000;
-    color: #000000;
-  }
 }
