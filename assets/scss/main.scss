@@ -1,11 +1,85 @@
+html, body {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+h1, h2, h3, h4 {
+  margin: 16px 0px;
+}
+
+
+label {
+  background-color: white;
+  border: 1px solid gray;
+  font-weight: normal;
+  padding: 10px 0px 0px 16px;
+  input {
+    border: none;
+    height: initial;
+    font-size: medium;
+  }
+}
+input {
+  background: #FFFFFF;
+  border: 1px solid #BABABA;
+  box-sizing: border-box;
+  border-radius: 2px;
+  height: 32px;
+  width: 100%;
+}
+input[type=radio]{
+  width: initial;
+  height: initial;
+}
+input[type=submit] {
+  background: #0855EB;
+  box-shadow: 0 2px 2px #000000;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+}
+input[type=submit]:hover {
+  box-shadow: none;
+  border: 1px solid #1C92A9;
+}
+
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+.error {
+  border-color: #f5c6cb;
+  color: #721c24;
+  background-color: #f8d7da;
+}
+.success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.mb-m {
+  margin-bottom: 10px;
+}
+
 .container {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   min-height: 100vh;
   display: block;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 
   .redbox {
     background-color: #ff0000;

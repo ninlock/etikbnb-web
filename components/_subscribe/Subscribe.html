@@ -1,0 +1,24 @@
+<div>
+  <h3>
+    Je m'inscris
+  </h3>
+  <span>En attendant que la plateforme soit disponible nous vous proposons de vous inscrire et nous vous recontacterons par la suite.</span>
+
+  <form @submit="checkForm">
+    <h2>Je m'inscris</h2>
+
+    <label>
+      Email
+      <input type="email" placeholder="email@zedz" v-model="email"/>
+    </label>
+    <div class="alert error" v-if="errors.some(e => e === 'email')">L'email est incorrect</div>
+
+    <h4>Vous souhaitez</h4>
+
+    <div v-for="t in types"><input type="radio" name="type" :value="t.value" v-model="type"/> {{t.label}}</div>
+    <div class="alert error" v-if="errors.some(e => e === 'type')">Un choix doit être fait pour valider le formulaire</div>
+
+    <input type="submit">
+
+  </form>
+</div>

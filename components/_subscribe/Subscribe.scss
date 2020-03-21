@@ -1,0 +1,25 @@
+
+form {
+  text-align: left;
+  padding: 30px;
+  background: #F7F7F7;
+  border-radius: 2px;
+  max-width: 400px;
+
+  div {
+    background: #FFFFFF;
+    /* brand/ gray light */
+    border: 1px solid #BABABA;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 6px;
+    margin: 5px 0px;
+  }
+
+  input[type=submit] {
+    margin-top: 20px;
+  }
+}
+form > * {
+  display: block;
+}

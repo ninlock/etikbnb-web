@@ -1,0 +1,10 @@
+<div class="Faq">
+  <h1>FAQ</h1>
+
+  <ul>
+    <li v-for="item in items">
+      <div class="ask">{{item.value}}</div><i @click="toggle(item)" v-bind:class="[item.opened ? 'minus' : 'plus']">opened ?</i>
+      <div class="answer" v-if="item.opened">{{item.answer}}</div>
+    </li>
+  </ul>
+</div>
